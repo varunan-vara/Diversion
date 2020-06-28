@@ -5,18 +5,18 @@ import 'Elements/body.dart';
 
 
 class MyApp extends StatefulWidget{
-  MainApp createState() => MainApp();
-}
+    MainApp createState() => MainApp();
+    }
 
 
 
-class MainApp extends State<MyApp> {
+      class MainApp extends State<MyApp> {
 
 
-  int stoneItem = 0;
+      int stoneItem = 0;
 
-  void ItemTap (int index) {
-    setState(() {
+      void ItemTap (int index) {
+      setState(() {
       stoneItem = index;
     });
     if (index ==1){
@@ -45,7 +45,7 @@ class MainApp extends State<MyApp> {
       home: Scaffold(
         drawer: Sandwich(true, context),
 
-        appBar: TopBar(false, "Home"),
+        appBar: TopBar(true, "Home"),
 
         body: Snap(),
 
@@ -61,8 +61,8 @@ class MainApp extends State<MyApp> {
                 title: Text("Home",)
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
-              title: Text("Settings"),
+              icon: Icon(Icons.book),
+              title: Text("Diaries"),
             ),
           ],
           currentIndex: stoneItem,

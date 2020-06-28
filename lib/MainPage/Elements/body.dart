@@ -9,15 +9,10 @@ class Snap extends StatelessWidget {
       shrinkWrap: true,
       padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 20.0),
       children: <Widget>[
-        Center(
-          child: FlatButton(
-              onPressed: () {Scaffold.of(context).openDrawer();},
-              color: Colors.indigo[500],
-              child: Text("Menu")
-          ),
-        ),
-      ],
-    );
+
+            ],
+          );
+
 
   }
 }
