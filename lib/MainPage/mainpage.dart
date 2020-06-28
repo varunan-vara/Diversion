@@ -5,18 +5,18 @@ import 'Elements/body.dart';
 
 
 class MyApp extends StatefulWidget{
-    MainApp createState() => MainApp();
-    }
+  MainApp createState() => MainApp();
+}
 
 
 
-      class MainApp extends State<MyApp> {
+class MainApp extends State<MyApp> {
 
 
-      int stoneItem = 0;
+  int stoneItem = 0;
 
-      void ItemTap (int index) {
-      setState(() {
+  void ItemTap (int index) {
+    setState(() {
       stoneItem = index;
     });
     if (index ==1){

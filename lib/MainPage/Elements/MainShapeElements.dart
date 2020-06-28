@@ -5,7 +5,7 @@ class greyRectangle extends StatelessWidget {
 
   String title;
   Widget main;
-  greyRectangle(title, main);
+  greyRectangle(this.title, this.main);
 
   @override
   Widget build(BuildContext context) {

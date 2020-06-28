@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:newapp/MainPage/mainpage.dart';
+import 'package:diversion_flutter_new/MainPage/mainpage.dart';
 import 'Blog.dart';
-import 'package:newapp/MainPage/Elements/Blog.dart';
+import 'package:diversion_flutter_new/MainPage/Elements/Blog.dart';
 
 
 class Snap extends StatelessWidget {
@@ -14,8 +14,8 @@ class Snap extends StatelessWidget {
       children: <Widget>[
         Blog(),
 
-            ],
-          );
+      ],
+    );
 
 
   }

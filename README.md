@@ -1,6 +1,6 @@
-# diversion
+# diversion_flutter_new
 
-Express your thoughts - Relieve your Stresses
+Releive your stress
 
 ## Getting Started
 

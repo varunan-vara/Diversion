@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:html2md/html2md.dart' as html2md;
-//import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:newapp/MainPage/mainpage.dart';
+import 'package:diversion_flutter_new/MainPage/mainpage.dart';
 import 'MainShapeElements.dart';
 
 
@@ -20,17 +18,7 @@ class Blog extends StatelessWidget{
   """;
 
 
-  Widget placeholder = Column(
-    children: <Widget>[
-      Text("."),
-      Text("."),
-      Text("."),
-      Text("."),
-      Text("."),
-      Text("."),
-      Text("."),
-    ],
-  );
+ Widget placeholder = Container();
 
   //String h2m = html2md.convert(html);
 
