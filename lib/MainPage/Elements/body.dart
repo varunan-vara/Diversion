@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newapp/MainPage/mainpage.dart';
+import 'Blog.dart';
 
 class Snap extends StatelessWidget {
 
@@ -9,6 +10,7 @@ class Snap extends StatelessWidget {
       shrinkWrap: true,
       padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 20.0),
       children: <Widget>[
+        Blog(),
 
             ],
           );

@@ -1,4 +1,4 @@
-package com.example.newapp
+package com.fluentbuckets.diversion
 
 import io.flutter.embedding.android.FlutterActivity
 
