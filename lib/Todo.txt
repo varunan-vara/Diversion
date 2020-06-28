@@ -1,0 +1,8 @@
+To - Do List
+
+ Finish MainPage
+ Connect to FireBase
+ Finish Intro Page
+ Diary Page
+ Contemplate Life Decisions
+ Manage Storage of Diaries
