@@ -17,6 +17,7 @@ class greyRectangle extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal:30.0, vertical: 40.0,),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget> [
               Text(title,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32.0,),),

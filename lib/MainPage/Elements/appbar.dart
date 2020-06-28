@@ -2,17 +2,39 @@ import 'package:flutter/material.dart';
 
 
 
-AppBar TopBar (bool run, String title) {
-  if (run) {
-    return AppBar(
-      title: Text(title),
-      centerTitle: true,
-      backgroundColor: Colors.indigo[500],
-    );
-  }else{
-    return null;
+class TopBar extends StatelessWidget implements PreferredSizeWidget {
+
+  bool run;
+  String title;
+
+  TopBar(this.run, this.title);
+
+  @override
+  Widget build(BuildContext context) {
+    if (run) {
+      return AppBar(
+        flexibleSpace: FlexibleSpaceBar(
+          title: Text(title,
+          style: TextStyle(fontSize: 24,),),
+          centerTitle: true,
+          background: Container(color: Colors.indigo[500],),
+        ),
+        backgroundColor: Colors.indigo[500],
+
+      );
+    } else {
+      return null;
+    }
   }
+
+  @override
+  Size get preferredSize => Size.fromHeight(80);
 }
+
+
+
+
+
 
 Drawer Sandwich (bool run, BuildContext context) {
   if (run) {
@@ -61,3 +83,5 @@ TextStyle MenuBarStyle () {
     fontWeight: FontWeight.bold,
   );
 }
+
+
