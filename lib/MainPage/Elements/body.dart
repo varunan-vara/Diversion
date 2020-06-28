@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newapp/MainPage/mainpage.dart';
+import 'package:newapp/MainPage/blogpage.dart';
 
 class Snap extends StatelessWidget {
 
