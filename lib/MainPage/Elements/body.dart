@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:newapp/MainPage/mainpage.dart';
 import 'Blog.dart';
-=======
-import 'package:newapp/MainPage/blogpage.dart';
->>>>>>> 52320c44a37a884b10d39cfb8595943782390157
+import 'package:newapp/MainPage/Elements/Blog.dart';
+
 
 class Snap extends StatelessWidget {
 
