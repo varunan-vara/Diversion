@@ -7,7 +7,7 @@ class Login extends StatelessWidget {
     return AlertDialog(
       title: Text("Login Page"),
       //insert login system here
-      //content:
+      //content: googloe thing
       actions: <Widget>[
         FlatButton(
           onPressed: () {

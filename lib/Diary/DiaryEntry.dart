@@ -263,6 +263,6 @@ void passToFireBase (String title, String entry, int rating) {
 
   String DataDate = formattedDate.toString();
 
-
+  //command here
 
 }

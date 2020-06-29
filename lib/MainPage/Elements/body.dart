@@ -13,11 +13,13 @@ class Snap extends StatelessWidget {
       shrinkWrap: true,
       padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 20.0),
       children: <Widget>[
-        Blog(),
-        Padding(
-          padding: EdgeInsets.all(16.0)
-        ),
+
+
         LoggedIN(context),
+        Padding(
+            padding: EdgeInsets.all(16.0)
+        ),
+        Blog(),
       ],
     );
 
