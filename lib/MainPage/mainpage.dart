@@ -1,3 +1,4 @@
+import 'package:diversion_flutter_new/LoginPage/LoginStatus.dart';
 import 'package:flutter/material.dart';
 import 'Elements/appbar.dart';
 import 'Elements/body.dart';
@@ -70,7 +71,20 @@ class MainApp extends State<MyApp> {
                   showDialog(
                     context: Keykey.currentContext,
                     builder: (BuildContext context) {
-                      return NewEntryDialog();
+                      if (isLoggedIn) {
+                        return NewEntryDialog();
+                      } else {
+                        return AlertDialog(
+                          title: Text("You haven't logged in yet!"),
+                          content: Text("Click on 'Log in to Diversion' to set up an account and write your first Journal!"),
+                          actions: <Widget>[
+                            FlatButton(
+                              onPressed: () {Navigator.pop(context);},
+                              child: Text("OK"),
+                            ),
+                          ],
+                        );
+                      }
                     }
                   );
                 },

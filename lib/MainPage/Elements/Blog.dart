@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:diversion_flutter_new/MainPage/mainpage.dart';
+import 'package:diversion_flutter_new/LoginPage/LoginStatus.dart';
 import 'MainShapeElements.dart';
 
 
@@ -27,4 +27,3 @@ class Blog extends StatelessWidget{
     return greyRectangle("Blog",placeholder);
   }
 }
-

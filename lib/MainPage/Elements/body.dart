@@ -7,6 +7,8 @@ import 'package:diversion_flutter_new/MainPage/Elements/Blog.dart';
 
 class Snap extends StatelessWidget {
 
+
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -16,9 +18,7 @@ class Snap extends StatelessWidget {
 
 
         LoggedIN(context),
-        Padding(
-            padding: EdgeInsets.all(16.0)
-        ),
+
         Blog(),
       ],
     );
