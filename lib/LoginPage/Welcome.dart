@@ -4,20 +4,19 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Diversion",
-      home: Scaffold(
-        body: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              LoginTitle("Welcome to Diversion"),
-            ],
-          ),
+    return AlertDialog(
+      title: Text("Login Page"),
+      //insert login system here
+      //content:
+      actions: <Widget>[
+        FlatButton(
+          onPressed: () {
+            //input some command
+            Navigator.pop(context);
+          },
+          child: Text("Log In"),
         ),
-      ),
+      ],
     );
   }
 }

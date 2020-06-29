@@ -232,9 +232,10 @@ class EntryPagy extends State<EntryPage>{
                   width: 100,
                   child: FlatButton(
                     onPressed: () {
-                      passToFireBase(EntryTitle,JournalEntry,currentMood);
-
-
+                      if (_formKey.currentState.validate()) {
+                        Navigator.pop(context);
+                        passToFireBase(EntryTitle,JournalEntry,currentMood);
+                      }
                     },
                     child: Text("Done"),
                   ),
@@ -250,47 +251,6 @@ class EntryPagy extends State<EntryPage>{
 
 
 
-class ConfirmDialog extends StatefulWidget {
-
-  String title;
-  String text;
-  int number;
-
-  ConfirmDialog(this.title, this.text, this.number);
-
-  Confirm createState() => Confirm(title, text, number);
-}
-
-class Confirm extends State<ConfirmDialog> {
-
-  String title;
-  String text;
-  int number;
-
-  Confirm(this.title, this.text, this.number);
-
-
-  @override
-  Widget build(BuildContext context) {
-    return AlertDialog(
-      title: Text("Confirm"),
-      content: Text("Are you sure?"),
-      actions: <Widget>[
-        FlatButton(
-          onPressed: () {Navigator.of(context).pop();},
-          child: Text("Cancel"),
-        ),
-        FlatButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-            passToFireBase(title, text, number);
-          },
-          child: Text("Confirm"),
-        ),
-      ],
-    );
-  }
-}
 
 void passToFireBase (String title, String entry, int rating) {
 
@@ -301,7 +261,7 @@ void passToFireBase (String title, String entry, int rating) {
 
   var formattedDate = "${dateParse.day}-${dateParse.month}-${dateParse.year}";
 
-  String DataDate = formattedDate.toString() ;
+  String DataDate = formattedDate.toString();
 
 
 

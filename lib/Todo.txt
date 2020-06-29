@@ -6,3 +6,4 @@ To - Do List
  Diary Page
  Contemplate Life Decisions
  Manage Storage of Diaries
+ Have I done a diary today?

@@ -15,30 +15,15 @@ class MyApp extends StatefulWidget{
 class MainApp extends State<MyApp> {
 
   var Keykey = new GlobalKey<ScaffoldState>();
-  bool temporaryBool = false;
-  int stoneItem = 0;
 
-  void ItemTap (int index) {
-    setState(() {
-      stoneItem = index;
-    });
-    if (index ==1){
-      _scaffoldKey.currentState.openDrawer();
-    };
-  }
+  int stoneItem = 0;
 
 
 
   GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey();
 
 
-  Widget Pageboi (int index) {
-    if (index == 0){
-      return Snap();
-    }else if(index == 1){
-      return Snap2();
-    }
-  }
+
 
 
   @override
@@ -71,7 +56,7 @@ class MainApp extends State<MyApp> {
               ),
             ],
             currentIndex: stoneItem,
-            onTap: ItemTap,
+            //onTap: ,
             selectedItemColor: Colors.indigo[500],
           ),
           floatingActionButton: Container(
@@ -101,29 +86,3 @@ class MainApp extends State<MyApp> {
 
     }
   }
-
-
-  //      return MaterialApp(
-//        home: AlertDialog(
-//          title: Text("Sign-in Required"),
-//          content: Column(
-//          mainAxisSize: MainAxisSize.min,
-//            children: <Widget>[
-//              Text("This app requires a sign-in with a google account.")
-//            ],
-//          ),
-//          actions: <Widget>[
-//            FlatButton(
-//              onPressed: () {
-//                Navigator.of(context, rootNavigator: true).pop('dialog');
-//                Navigator.push(
-//                  context,
-//                  MaterialPageRoute(builder: (context) => Login()),
-//                );
-//              },
-//              child: Text("Continue"),
-//              color: Colors.indigo[400],
-//            ),
-//          ],
-//        ),
-//      );
